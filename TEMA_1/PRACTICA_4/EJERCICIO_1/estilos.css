@@ -1,0 +1,38 @@
+img {
+    width: 300px;
+    height: 110px;
+    text-align: center;
+}
+
+fieldset{
+    color: firebrick;
+    background-color:  #f4f1ed;
+    width: 400px;
+    border-color: darkgoldenrod;
+    border-radius: 7px;
+}
+
+legend{
+    color: darkblue;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+footer h3{
+    color: #f7c600;
+    font-weight: bold;
+}
+
+footer{
+    padding: 5px;
+    background-color: #333;
+    text-align: center;
+}
+
+footer img {
+    width: 48px;
+    height: 48px;
+}

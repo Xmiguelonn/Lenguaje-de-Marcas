@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <img src="../recursos/ejercicio1/IAT-LOGOTIPO.jpg" alt="">
+    
+    <form action="/“procesarincidencia.php"></form>
+        <fieldset>
+
+            <legend>Nueva incidencia</legend>
+
+            <label for="profesor">Profesor *:</label>
+            <input required type="text" id="profesor" name="profesor" placeholder="Escribe tu nombre aquí">
+            <br><br>
+            <label for="correo">Correo electrónico *:</label>
+            <input required type="text" id="correo" name="correo" placeholder="Escribe tu correo aquí">
+            <br><br>
+
+            <label for="departamento">Departamento *:</label>
+            <select required name="departamento" id="departamento">
+                <option placeholder="informatica">Informática</option>
+                <option placeholder="it">IT</option>
+                <option placeholder="contabilidad">Contabilidad</option>
+                <option placeholder="marketing">Marketing</option>
+                <option placeholder="recursos_humanos">Recursos Humanos</option>
+            </select>
+
+            <br><br>
+
+            <label for="aula">Aula *:</label>
+            <input required type="text" id="aula" name="aula" placeholder="Indica aqúi el aula">
+
+            <br><br>
+
+            <label for="dia">Día de la incidencia *:</label>
+            <input required type="date" id="dia" name="dia">
+            <br><br>
+
+            <label for="hora">Hora de la incidencia *:</label>
+            <input required type="time" id="hora" name="hora">
+            <br><br>
+
+            <label for="desc">Descripción de la incidencia *:</label>
+            <textarea required name="message"></textarea>
+
+            <br><br>
+
+            <label for="img">Imagen de la incidencia (opcional):</label>
+            <input type="file" placeholder="Seleccionar archivo">
+
+            <br><br>
+            
+            <input type="submit" value="Enviar incidencia">
+            <input type="reset" value="Borrar formulario">
+    </form>
+
+    </fieldset>
+
+
+<br>
+
+<footer>
+    <h3>Síguenos</h3>
+    <img src="../recursos/ejercicio1/icons8-facebook-48.png" alt="">
+    <img src="../recursos/ejercicio1/icons8-twitter-48.png" alt="">
+    <img src="../recursos/ejercicio1/icons8-instagram-48.png" alt="">
+    <img src="../recursos/ejercicio1/icons8-youtube-48.png" alt="">
+    <img src="../recursos/ejercicio1/icons8-website-48.png" alt="">
+
+</footer>
+</body>
+</html>
