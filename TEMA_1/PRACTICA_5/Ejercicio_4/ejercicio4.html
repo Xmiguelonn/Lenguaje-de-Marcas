@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+
+    <form action="/“procesarincidencia.php"></form>
+        <fieldset>
+
+            <legend>CALCULADORA</legend>
+
+            <label for="num1">Introduce un número:</label>
+            <input required type="text" id="num1" name="num1" placeholder="">
+            <br><br>
+            <label for="num2">Introduce otro número:</label>
+            <input required type="text" id="num2" name="num2" placeholder="">
+            <br><br>
+
+            <label for="operando">Selecciona la operación :</label>
+            <select required name="operando" id="operando">
+                <option placeholder="Sumar">Sumar</option>
+                <option placeholder="Restar">Restar</option>
+                <option placeholder="Multiplicar">Multiplicar</option>
+                <option placeholder="Dividir">Dividir</option>
+            </select>
+
+            <button type="button" onclick="document.getElementById('resultado')">Bomba de humo</button>
+
+            <label id="resultado"></label>
+
+
+        </fieldset>
+        <script>
+            function calcular(){
+                let num1 = document.getElementById(num1).value
+                let num2 = document.getElementById(num2).value
+                let operando = document.getElementById(operando).value
+
+            }
+
+        </script>
+</body>
+</html>
