@@ -1,0 +1,69 @@
+body{
+    background-color: black;
+    display: block;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#componentes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    width: auto;
+    width: 73%;
+}
+
+.container{
+    display: flex;
+    width: 73%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #1C1C2B;
+    color: #D8D8D8;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+
+
+#segundo_contenedor{
+    display: block;
+    padding-top: 40px;
+    height: 370px;
+}
+
+
+
+#segundo_contenedor img{
+    height: 300px;
+    float: left;
+    margin-right: 40px;
+    border-radius: 10px;
+
+}
+
+.componente{
+    height: 300px;
+    text-align: center;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#placa_base, #cpu,#ssd,#disco_duro, #memoria_ram, #gpu, #disipacion, #torre,#ventiladores, #fuente_alimentacion{
+    flex-direction: column;
+    width: auto;
+    height: 540px;
+    max-width: 70%;
+}
+
+
+h1{
+    text-align: center;
+    color: skyblue;
+}
+
+p{
+    text-align: center;
+}
