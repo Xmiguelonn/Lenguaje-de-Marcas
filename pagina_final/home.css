@@ -16,9 +16,9 @@ body{
 
 .container{
     display: flex;
-    width: 73%;
+    width: 70%;
     padding: 20px;
-    margin: 20px auto;
+    margin:auto;
     background-color: #1C1C2B;
     color: #D8D8D8;
     align-items: center;
@@ -29,9 +29,12 @@ body{
 
 
 #segundo_contenedor{
+    margin-top: 20px;
     display: block;
     padding-top: 40px;
-    height: 370px;
+    height: 340px;
+    width: 70%;
+    padding: 20px;
 }
 
 
@@ -45,17 +48,18 @@ body{
 }
 
 .componente{
-    height: 300px;
+    height: 40%;
     text-align: center;
-    margin-right: auto;
+
     border-radius: 10px;
 }
 
-#placa_base, #cpu,#ssd,#disco_duro, #memoria_ram, #gpu, #disipacion, #torre,#ventiladores, #fuente_alimentacion{
+.home_foto{
     flex-direction: column;
     width: auto;
     height: 540px;
     max-width: 70%;
+    margin-top: 40px;
 }
 
 
