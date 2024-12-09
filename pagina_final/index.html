@@ -6,18 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./css/home.css">
+    <script src="./js/home.js" defer></script>
+    <link rel="icon" href="./recursos/icono.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <div class="container">
+    <div id="topnav">
 
-        <p>aqui va la nav bar</p>
+        <a class="active" href="./index.html">Home</a>
+        <a href="./placa_base.html">Placa Base</a>
+        <a href="./procesador.html">CPU</a>
+        <a href="./ssd.html">SSD</a>
+        <a href="./disco_duro.html">Disco Duro</a>
+        <a href="./RAM.html">Memoria RAM</a>
+        <a href="./gpu.html">GPU</a>
+        <a href="./disipacion.html">Disipacion</a>
+        <a href="./torres.html">Torres</a>
+        <a href="./FuenteAlimentacion.html">Fuente de Alimentacion</a>
+        <a href="./aboutme.html">Sobre mí</a>
+
 
     </div>
 
     <div id="portada">
         <img src="./recursos/portada.jpg" alt="portada">
+        <span id="especial">MAPB</span>
     </div>
 
 
@@ -39,7 +53,7 @@
     </div>
 
     <div id="componentes">
-        <div id="placa_base" class="home_foto container">
+        <div class="home_foto container">
 
             <img class="componente" src="./recursos/placa_base.jpg" alt="placa_base">
 
@@ -47,25 +61,30 @@
             <h1>Placa base</h1>
 
 
-            <p>La placa base es el componente fundamental que conecta y da vida a todas las partes de tu ordenador. Desde el procesador hasta la memoria RAM y los dispositivos de almacenamiento, todo pasa por ella. <br> <br>Pero ¿sabes realmente cómo funciona y por qué es tan importante?</p>
+            <p>La placa base es el componente fundamental que conecta y da vida a todas las partes de tu ordenador.
+                Desde el procesador hasta la memoria RAM y los dispositivos de almacenamiento, todo pasa por ella. <br>
+                <br>Pero ¿sabes realmente cómo funciona y por qué es tan importante?
+            </p>
 
 
         </div>
 
-        <div id="cpu" class="home_foto container">
+        <div class="home_foto container">
 
             <img class="componente" src="./recursos/CPU.jpg" alt="procesador">
 
 
             <h1>CPU</h1>
 
-            <p>El CPU, o Unidad Central de Procesamiento, es el cerebro de tu ordenador. Es el encargado de realizar los cálculos, ejecutar instrucciones y procesar la información necesaria para que todo funcione. Sin él, tu equipo simplemente no podría operar.</p>
+            <p>El CPU, o Unidad Central de Procesamiento, es el cerebro de tu ordenador. Es el encargado de realizar los
+                cálculos, ejecutar instrucciones y procesar la información necesaria para que todo funcione. Sin él, tu
+                equipo simplemente no podría operar.</p>
 
             <br>
 
         </div>
 
-        <div id="ssd" class="home_foto container">
+        <div class="home_foto container">
 
             <img class="componente" src="./recursos/ssd.jpg" alt="ssd">
 
@@ -73,100 +92,158 @@
             <h1>SSD</h1>
 
 
-            <p>El SSD es un dispositivo de almacenamiento rápido que utiliza memoria flash en lugar de discos giratorios. Esto le permite acceder a los datos mucho más rápido que un disco duro tradicional, mejorando significativamente el rendimiento del sistema, como la velocidad de arranque y carga de programas.</p>
+            <p>El SSD es un dispositivo de almacenamiento rápido que utiliza memoria flash en lugar de discos
+                giratorios. Esto le permite acceder a los datos mucho más rápido que un disco duro tradicional,
+                mejorando significativamente el rendimiento del sistema, como la velocidad de arranque y carga de
+                programas.</p>
 
 
         </div>
 
-        <div id="disco_duro" class="home_foto container">
+        <div class="home_foto container">
 
             <img class="componente" src="./recursos/disco_duro.jpg" alt="disco_duro">
 
 
             <h1>Disco Duro</h1>
 
-            <p>El disco duro es un dispositivo de almacenamiento tradicional que utiliza discos magnéticos para guardar datos. Aunque es más lento que un SSD, sigue siendo popular por ofrecer grandes capacidades de almacenamiento a un costo más bajo.</p>
+            <p>El disco duro es un dispositivo de almacenamiento tradicional que utiliza discos magnéticos para guardar
+                datos. Aunque es más lento que un SSD, sigue siendo popular por ofrecer grandes capacidades de
+                almacenamiento a un costo más bajo.</p>
 
             <br>
 
         </div>
 
-        <div id="memoria_ram" class="home_foto container">
+        <div class="home_foto container">
 
             <img class="componente" src="./recursos/memoria_RAM.jpg" alt="memoria_ram">
 
 
             <h1>Memoria RAM</h1>
 
-            <p>La RAM es la memoria temporal de un ordenador que almacena los datos y programas que el procesador necesita de forma inmediata. Cuanta más RAM tenga un equipo, mejor podrá manejar múltiples tareas sin ralentizarse.</p>
-
-            <br>
+            <p>La RAM es la memoria temporal de un ordenador que almacena los datos y programas que el procesador
+                necesita de forma inmediata. Cuanta más RAM tenga un equipo, mejor podrá manejar múltiples tareas sin
+                ralentizarse.</p>
 
         </div>
 
-        <div id="gpu" class="home_foto container">
+        <div class="home_foto container">
 
             <img class="componente" src="./recursos/tarjeta_grafica.jpg" alt="gpu">
 
 
             <h1>GPU</h1>
 
-            <p>La GPU es el componente encargado de procesar y generar gráficos. Es esencial para tareas como los videojuegos, la edición de video y aplicaciones gráficas, proporcionando el poder de procesamiento necesario para crear imágenes y animaciones complejas.</p>
+            <p>La GPU es el componente encargado de procesar y generar gráficos. Es esencial para tareas como los
+                videojuegos, la edición de video y aplicaciones gráficas, proporcionando el poder de procesamiento
+                necesario para crear imágenes y animaciones complejas.</p>
 
             <br>
-
         </div>
 
-        <div id="disipacion" class="home_foto container">
+        <div class="home_foto container">
 
             <img class="componente" src="./recursos/disipacion.jpg" alt="disipacion">
 
 
             <h1>Disipación</h1>
 
-            <p>La disipación de calor es fundamental para mantener los componentes del ordenador a una temperatura segura. Los sistemas de refrigeración, como ventiladores y disipadores de calor, ayudan a evitar el sobrecalentamiento y a garantizar el buen funcionamiento del equipo.</p>
+            <p>La disipación de calor es fundamental para mantener los componentes del ordenador a una temperatura
+                segura. Los sistemas de refrigeración, como ventiladores y disipadores de calor, ayudan a evitar el
+                sobrecalentamiento y a garantizar el buen funcionamiento del equipo.</p>
 
             <br>
 
+
         </div>
 
-        <div id="torre" class="home_foto container">
+        <div class="home_foto container">
 
             <img class="componente" src="./recursos/torre.jpg" alt="torre">
 
 
             <h1>Torres</h1>
 
-            <p>La torre es la carcasa que alberga todos los componentes internos de un ordenador. Su diseño asegura la protección de los componentes y facilita la circulación del aire para mantener la temperatura bajo control.</p>
+            <p>La torre es la carcasa que alberga todos los componentes internos de un ordenador. Su diseño asegura la
+                protección de los componentes y facilita la circulación del aire para mantener la temperatura bajo
+                control.</p>
 
             <br>
 
-        </div>
-
-        <div id="ventiladores" class="home_foto container">
-
-            <img class="componente" src="./recursos/ventiladores.jpg" alt="ventiladores">
-
-
-            <h1>Ventiladores Suplementarios</h1>
-
-            <p>Los ventiladores suplementarios mejoran la refrigeración dentro de la torre del ordenador, asegurando que los componentes, como la CPU y GPU, se mantengan frescos. Esto es especialmente importante en sistemas de alto rendimiento o en entornos de uso intensivo.</p>
-
-            <br>
 
         </div>
 
-        <div id="fuente_alimentacion" class="home_foto container">
+
+        <div class="home_foto container">
 
             <img class="componente" src="./recursos/fuente_alimentacion.jpg" alt="fuente_alimentacion">
 
 
             <h1>Fuente de Alimentacion</h1>
 
-            <p>La fuente de alimentación convierte la corriente eléctrica de la red en energía continua para los componentes del ordenador. Es esencial para garantizar que el sistema funcione de manera estable y segura, proporcionando la energía necesaria para cada parte del equipo.</p>
+            <p>La fuente de alimentación convierte la corriente eléctrica de la red en energía continua para los
+                componentes del ordenador. Es esencial para garantizar que el sistema funcione de manera estable y
+                segura, proporcionando la energía necesaria para cada parte del equipo.</p>
 
             <br>
 
+
+        </div>
+
+    </div>
+
+    <div class="container formulario">
+        <h2>¿Te ha gustado la página?</h2>
+        <p>Suscríbete para no perderte ninguna actualización</p>
+
+        <div class="form-container">
+            <h1>Formulario de Opinión</h1>
+            <form action="#" method="post">
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" name="nombre" required> 
+
+                <label for="edad">Edad*</label><br>
+                <input type="number" id="edad" name="edad" min="1" max="120" required>
+
+                <p>Género*</p>
+                <label>
+                    <input type="radio" name="genero" value="masculino" required> Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="femenino" required> Femenino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="otro" required> Otro
+                </label>
+
+                <label for="primer-apellido"><br> <br>Primer Apellido*</label>
+                <input type="text" id="primer-apellido" name="primer-apellido" required>
+
+                <label for="segundo-apellido">Segundo Apellido</label>
+                <input type="text" id="segundo-apellido" name="segundo-apellido">
+
+                <label for="correo">Correo Electrónico*</label>
+                <input type="email" id="correo" name="correo" placeholder="micorreoelectronico@ejemplo.com" required>
+
+                <p>¿Qué te ha gustado más?</p>
+                <label>
+                    <input type="checkbox" name="gustos" value="colores"> Los colores
+                </label>
+                <label>
+                    <input type="checkbox" name="gustos" value="imagenes"> Las imagenes
+                </label>
+                <label>
+                    <input type="checkbox" name="gustos" value="contenido"> El contenido
+                </label>
+
+                <label for="mejoras"><br> <br>¿Qué mejorarías de la página?</label>
+                <textarea id="mejoras" name="mejoras" rows="4" placeholder="Escribe tus sugerencias aquí..."></textarea>
+
+                <div class="button-container">
+                    <button type="submit" id="btnFormulario" class="btn btn-gradient">Enviar</button>
+                </div>
+            </form>
         </div>
 
     </div>
@@ -176,9 +253,7 @@
 
             <div class="container">
 
-                <p>holaa</p>
-
-            </div>
+                <p>mposber2303@g.educaand.es</p>
         </footer>
     </div>
 

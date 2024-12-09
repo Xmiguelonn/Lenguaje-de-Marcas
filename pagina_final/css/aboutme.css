@@ -1,0 +1,105 @@
+@font-face {
+  font-family: texto;
+  src: url(../fonts/montserrat.regular.ttf);
+}
+
+@font-face {
+  font-family: titulo;
+  src: url(../fonts/NimbusMono-Bold.otf);
+}
+
+@font-face {
+  font-family: retro;
+  src: url(../fonts/ByteBounce.ttf);
+}
+
+body {
+  background-image: url(../recursos/abou_me/fondo.jpg);
+  background-size: fill; /* Hace que la imagen cubra todo el espacio disponible */
+  background-repeat: repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+  display: block;
+  justify-content: center;
+  font-family: texto;
+}
+
+#topnav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px); /*filtro para que se vea borroso*/
+}
+
+#topnav a {
+  font-family: titulo;
+  display: block;
+  float: left; /* Make elements float left */
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+#topnav a:hover {
+  background-color: #1a7887;
+  color: white;
+}
+
+#topnav a.active {
+  background-color: #3ec4ce;
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 70%;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: auto;
+  color: #d8d8d8;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(18, 18, 18);
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-family: retro;
+  opacity: 100%;
+  font-size: 50px;
+  color: skyblue;
+}
+
+h2 {
+  font-family: retro;
+  opacity: 1;
+}
+
+h3 {
+  font-family: retro;
+  opacity: 1;
+}
+
+p {
+  font-family: retro;
+  opacity: 1;
+  font-size: 25px;
+}
+
+

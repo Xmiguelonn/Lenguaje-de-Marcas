@@ -1,0 +1,83 @@
+@font-face {
+  font-family: texto;
+  src: url(../fonts/montserrat.regular.ttf);
+}
+
+@font-face {
+  font-family: titulo;
+  src: url(../fonts/NimbusMono-Bold.otf);
+}
+
+body {
+  background-image: url(../recursos/background.jpg);
+  background-size: cover; /* Hace que la imagen cubra todo el espacio disponible */
+  background-repeat: round;
+  background-position: center; /* Centra la imagen */
+  display: block;
+  justify-content: center;
+  font-family: texto;
+}
+
+.container {
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  max-width: 800px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #1c1c2b;
+  color: #d8d8d8;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+#portada img {
+  margin: 10px;
+  width: 55%;
+}
+
+#portada {
+  text-align: center;
+}
+
+#topnav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px); /*filtro para que se vea borroso*/
+}
+
+#topnav a {
+  font-family: titulo;
+  display: block;
+  float: left; /* Make elements float left */
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+#topnav a:hover {
+  background-color: #1a7887;
+  color: white;
+}
+
+#topnav a.active {
+  background-color: #3ec4ce;
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: skyblue;
+  font-family: titulo;
+}
+
