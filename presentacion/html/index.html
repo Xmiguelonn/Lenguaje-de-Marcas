@@ -15,7 +15,8 @@
         Miguel A. Postigo
     </h1>
     <center>
-        <button id="changeNameButton">Cambiar nombre</button>
+        <button id="changeNameButton">Cambiar color del nombre</button>
+        <button id="changeDisplayButton">Cambiar el display</button>
     </center>
     <center>
         <button id="original">Estilo original</button>
@@ -38,7 +39,23 @@
         <a href="https://www.portfolio.com/" target="_blank">Portfolio</a>
     </div>
 
-    <button type="button" id="boton" > Show Form </button>
+    <center>
+
+        <button type="button" id="boton" > Show Form </button>
+    </center>
+
+    <div id="contactForm" class="contact-form">
+        <label>Nombre Completo</label>
+        <input type="text" id="name" name="name" required>
+        <label>Teléfono</label>
+        <input type="text" name="telefono" id="telefono">
+        <label>Email</label>
+        <input type="text" name="email" id="email">
+        <label>Mensaje</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+    </div>
+
+    <button id="changeFormButton">Mostrar formulario</button>
 
     <script src="../js/java.js"></script>
 </body>

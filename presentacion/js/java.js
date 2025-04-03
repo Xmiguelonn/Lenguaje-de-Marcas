@@ -14,16 +14,69 @@ profileImage.addEventListener('mouseout', () => {
 
 
 var chageNameColorButton = document.getElementById('changeNameButton');
+var changeDisplayButton = document.getElementById('changeDisplayButton');
+var changeFormButton = document.getElementById('changeFormButton');
+
 
 var fullNameH1 = document.getElementById('fullName');
+
+
+changeFormButton.addEventListener('click',() =>{
+
+    if(contactForm.style.display==="none"){
+
+        contactForm.style.display="block";
+        changeFormButton.textContent="Ocultar formulario";
+
+    } else {
+
+
+        contactForm.style.display="none";
+        changeFormButton.textContent="Mostrar formulario";
+
+    }
+
+});
+
 
 chageNameColorButton.addEventListener('click',() => {
     console.warn("click ------------");
     alert("los tralaleritos dicen: tralalá!");
-    fullNameH1.style = "color: black; font-style: italic;";
+    if(fullNameH1.style.color===""){
+
+        fullNameH1.style="color: yellow; ";
+        fullNameH1.textContent="1ºDAW";
+    
+    } else {
+    
+        fullNameH1.style="";
+        fullNameH1.textContent="Miguel A. Postigo";
+    
+    }
 });
 
-const profileColorName = document.getElementById('boton');
+changeDisplayButton.addEventListener('click',() => {
+
+    if(fullNameH1.style.display==="block"){
+
+        fullNameH1.style.display="none";
+
+    } else {
+
+        fullNameH1.style.display="block";
+
+    }
+
+
+} );
+
+
+
+
+
+
+
+
 
 /* profileColorName.addEventListener('click', () => {
     const titleName = document.getElementById('fullName')
