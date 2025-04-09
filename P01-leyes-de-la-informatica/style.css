@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
+
+
+h1{
+
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 18px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.container {
+
+    background-color: skyblue;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#inicial::first-letter{
+
+    font-size: 50px;
+    color: blue;
+    float: left;
+}
+
+div{
+
+    max-width: 50%;
+    align-items: center;
+
+}
+
+
+
+h2{
+
+    background-color: blue;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
