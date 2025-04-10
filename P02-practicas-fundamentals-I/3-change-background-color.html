@@ -1,12 +1,35 @@
-<h1>Welcome back background</h1>
+<h1 id="title">Welcome back background</h1>
 <button id="colorButton">Change Color</button>
+<button id="background">Change background</button>
+<button id="h1Color" >Change h1</button>
 <div id="colorDiv" style="width: 100px; height: 100px; background-color: lightblue;"></div>
 <script>
+
+  const text = document.getElementById("title");
   const button = document.getElementById("colorButton");
   const div = document.getElementById("colorDiv");
+  const background = document.getElementById("background");
+  const h1Color = document.getElementById("h1Color");
 
   button.addEventListener("click", function () {
     div.style.backgroundColor = "red";
+  });
+
+  background.addEventListener("click", function () {
+
+    div.style.backgroundColor = "lightblue";
+
+  });
+
+  h1Color.addEventListener("click", function (){
+
+    if(div.style.backgroundColor === "red"){
+
+      text.style.color = "blue";
+
+    }
+
+
   });
 
   // TODO: ç
