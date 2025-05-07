@@ -36,13 +36,58 @@
   <script>
     //TODO: When the button Registrarse is clicked, it should display all the input value in their respective <p> tag
 
-      const btnReg = document.getElementById("registrarse");
-
 
     // Add also a validation for the form, if the name is empty, show an error message in the <span> tag with id="errorNombre"
     // If the email is empty, show an error message in the <span> tag with id="errorEmail"
     // If the password is empty, show an error message in the <span> tag with id="errorPassword"
     // If the password and confirm password are not the same, show an error message in the <span> tag with id="errorConfirmPassword"
+    const form = document.getElementById("registroForm");
+    const btnReg = document.getElementById("registrarse");
+
+    const nombreInput = document.getElementById("nombre");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+    const confirmPasswordInput = document.getElementById("confirmPassword");
+
+    const errorNombre = document.getElementById("errorNombre");
+    const errorEmail = document.getElementById("errorEmail");
+    const errorPassword = document.getElementById("errorPassword");
+    const errorConfirmPassword = document.getElementById("errorConfirmPassword");
+
+    const pTags = form.querySelectorAll("p");
+
+    form.addEventListener("submit", function (evento) {
+
+
+      let valido = true;
+
+      if (nombreInput.value === "") {
+        errorNombre.textContent = "El nombre es obligatorio.";
+        valido = false;
+      }
+
+      if (emailInput.value === "") {
+        errorEmail.textContent = "El email es obligatorio.";
+        valido = false;
+      }
+
+      if (passwordInput.value === "") {
+        errorPassword.textContent = "La contraseña es obligatoria.";
+        valido = false;
+      }
+
+      if (confirmPasswordInput.value !== passwordInput.value) {
+        errorConfirmPassword.textContent = "Las contraseñas no coinciden.";
+        valido = false;
+      }
+
+      if (valido) {
+        pTags[0].textContent = "Nombre: " + nombreInput.value;
+        pTags[1].textContent = "Email: " + emailInput.value;
+        pTags[2].textContent = "Contraseña: " + passwordInput.value;
+        pTags[3].textContent = "Confirmar Contraseña: " + confirmPasswordInput.value;
+      }
+    });
   </script>
 </body>
 
