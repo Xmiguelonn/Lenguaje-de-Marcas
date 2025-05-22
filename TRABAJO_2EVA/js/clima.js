@@ -12,12 +12,14 @@ function fillContent(clima){
     temperaturaEl.textContent = clima.current.temp_c + " ºC";
 
     var viento = document.getElementById("viento");
-    viento.textContent = clima.current.wind_kph;
+    viento.textContent = clima.current.wind_kph + " Kph";
 
-    
+    var precipitacioes = document.getElementById("precip");
+    precipitacioes.textContent = clima.current.precip_mm + " %";
+
     var hours = clima.forecast.forecastday[0].hour;
     
     hours.forEach(function(item) {
-    
+
     })
 }
