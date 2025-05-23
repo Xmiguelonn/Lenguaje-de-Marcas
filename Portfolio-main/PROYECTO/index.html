@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC TECH - Home</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="./JS/Funciones.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+            <div class="topnav" id="myTopnav">
+                <a href="#hero" class="active">Home</a>
+                <a href="#intro">About us</a>
+                <a href="#Servicios">Our services</a>
+                <a href="#PCs">PC</a>
+                <a href="#fotos">Productos</a>
+                <a href="#gallery">Gallery</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        
+        <section id= "hero">
+            <!--aqui va la hero -->
+            <p id="Parrafo">PC<BR>TECH</BR></p>
+        </section>
+
+        
+            <div class="titulo">
+                About US</div>
+        <section id="intro">
+                <video id="video-placa-base" src="./img/video-placa-base.mp4" loop autoplay muted></video>
+
+                <h4>Lo primero que quiero decir es que esta página web está basada en el poyecto de Empresa e Iniciativa Emprendedora del curso 2023/2024</h4>
+                <p class="texto">We are a newly created computer store that sells both in person and online</p>
+                <p class="texto">We want to be one of the largest IT companies in Spain over time and if possible go further.</p>
+
+                <div class="caja"><h2 class="h2">History</h2></div>
+                
+                <p class="texto">The three of us had different business ideas, such as a gym, a bank... But none of us were convinced by any of those ideas, the only one we agreed on was a computer store. </p>
+                  <p class="texto">However, we also came to the conclusion that a computer store was something simple and was going to fall short.</p>
+
+                  <p class="texto"> We all came up with the idea of implementing a website to sell the products and we also came up with the idea of adding a section where unemployed technicians can register to support them and we can get remuneration from them.
+                  </p>
+
+                  <div class="caja"><h2 class="h2">Members</h2></div>
+
+                  <p class="texto"> <strong> The members of our business project are:</strong></p>
+                  <h4>Dana Espinosa</h4>
+                  <p class="texto"> Public facing and web designer</p>
+                  <h4>Samuel Díaz</h4>
+                  <p class="texto"> Technical service and Advertising</p>
+                  <h4>Jose Alcaide</h4>
+                  <p class="texto"> Account Manager and Warehouse Distributor</p>
+                  <h4>Miguel Angel Postigo</h4>
+                  <p class="texto"> Creation and maintenance of the website</p>
+
+        </section>
+
+        <!-- SECCIÓN DE EJEMPLO DE GRID A 2 COLUMNAS : 1 CONTENEDOR GRID-2 Y 2 COLUMNAS DENTRO COL-2 -->
+
+        <section id="ejemplo-grid-2">
+
+            <div id="Servicios" class="titulo">Our Services</div>
+            <div class="grid-2">
+                <div class="col-2">
+                  <h3>Maintenance of computer equipment</h3>
+                <p class="texto">We maintain computer equipment including tablets, desktop computers or laptops, consoles, TV... And we also assemble desktop computers</p>
+                <button id="boton1">READ MORE</button>
+                <img id="#ejemplo-grid-2" src="./img/mantenimiento_pc.jpg" alt="">
+
+                </div>
+                <div class="col-2">
+                <img id="#ejemplo-grid-2" src="./img/pc_montado.jpg" alt="">
+                <h3>PC sales</h3>
+                <p class="texto">We sell computers assembled by our technician with the parts that the client chooses or with the offer of pre-assembled computers made by our experts
+                </p>
+                <button id="boton2">READ MORE</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- USO DE ACCORDION PARA PRESENTAR MUCHA INFORMACIÓN EN UN FORMATO DESPLEGABLE: PREGUNTAS Y RESPUESTAS, ESTRUCTURADO EN VARIOS CAPÍTULOS, ETC...-->
+        <div id="PCs" class="titulo">Nuestros Pcs premontados</div>
+        <section id="PC_PRINCIPALES">
+            <div class="container">
+              <div class="accordion">
+                <div class="accordion-item" id="question1">
+                  <a class="accordion-link" href="#question1">
+                    <div class="flex">
+                      <h3>PC BRONZE   450€</h3>
+                      
+                    </div>
+                    <i class="icon ion-md-arrow-forward"></i>
+                    <i class="icon ion-md-arrow-down"></i>
+                  </a>
+                  <div class="answer">
+                    <p><strong>Caja:</strong>Nfortec Lynx Torre Negra</p>
+                    <p> <strong> Fuente de alimentación:</strong> 650W 80+ </p>
+                    <p><strong>Procesador:</strong> AMD RYZEN 5 4600G 4.20 GHz </p>
+                    <p> <strong>Placa base:</strong>  A520M / B550 / B450 O Similar (Según disponibilidad)</p>
+                    <p> <strong>Disco Duro:</strong> 480GB SSD</p>
+                    <p> <strong>Memoria RAM:</strong> 8 GB DDR4 3200Mhz(o superior)</p>
+                    <p> <strong>Sistema Operativo:</strong> Windows 10 PRO</p>
+                  </div>
+                  <hr>
+              </div>
+                <div class="accordion-item" id="question2">
+                  <a class="accordion-link" href="#question2">
+                    <div class="flex">
+                      <h3>PC SILVER 800€</h3>
+                    </div>
+                    <i class="icon ion-md-arrow-forward"></i>
+                    <i class="icon ion-md-arrow-down"></i>
+                  </a>
+                  <div class="answer">
+                    <p><strong>Caja:</strong> Cougar Airface RGB Mid Tower Cristal Templado USB 3.0 Negra</p>
+                    <p> <strong> Fuente de alimentación:</strong>  550W 80+ Bronze </p>
+                    <p><strong>Procesador:</strong> Intel Core I5-12400F 2,5Ghz 6 Cores</p>
+                    <p> <strong>Placa base:</strong> Base MSI PRO H610M-E o similar - Según disponibilidad</p>
+                    <p> <strong>Disco Duro:</strong>Kingston NV2 1TB SSD PCIe 4.0 NVMe Gen 4x4</p>
+                    <p> <strong>Memoria RAM:</strong>RAM 32GB RAM DDR4 3200 2X16 CL16</p>
+                    <p><strong>Tarjeta gráfica</strong> Nvidia GeForce GTX 1650 4GB GDDR6</p>
+                    <p> <strong>Sistema Operativo:</strong> Windows 10 PRO</p>
+                  </div>
+                  <hr>
+              </div>
+                <div class="accordion-item" id="question3">
+                  <a class="accordion-link" href="#question3">
+                    <div class="flex">
+                      <h3>PC GOLD 1200€</h3>
+
+                    </div>
+                    <i class="icon ion-md-arrow-forward"></i>
+                    <i class="icon ion-md-arrow-down"></i>
+                  </a>
+                  <div class="answer">
+                    <p><strong>Caja:</strong> XIGMATEL LUX</p>
+                    <p> <strong> Fuente de alimentación:</strong> XIGMATEK MINOTAUR 850W 80+ Bronze </p>
+                    <p><strong>Procesador:</strong> AMD Ryzen7 5700X</p>
+                    <p> <strong>Placa base:</strong>Gigabyte GA-B550-GAMING X (AM4) (D)</p>
+                    <p> <strong>Disco Duro:</strong>Teamgroup 1TB MP33 PRO PCIe M.2 PCIe 3.0 x4 NVME</p>
+                    <p> <strong>Memoria RAM:</strong> XPG SPECTRIX DDR4 16GB (2X8GB) 3200MHZ D50 RGB</p>
+                    <p><strong>Tarjeta gráfica</strong>Palit GeForce® RTX 4060 Ti 8GB StormX OC</p>
+                    <p> <strong>Sistema Operativo:</strong> Windows 10 PRO</p>
+                  </div>
+                  <hr>
+              </div>
+                <div class="accordion-item" id="question4">
+                  <a class="accordion-link" href="#question4">
+                    <div>
+                      <h3>PC MASTER RAZE 2000€</h3>
+                    </div>
+                    <i class="icon ion-md-arrow-forward"></i>
+                    <i class="icon ion-md-arrow-down"></i>
+                  </a>
+                  <div class="answer">
+                    <p><strong>Caja:</strong>Nfortec Draco Negra</p>
+                    <p> <strong> Fuente de alimentación:</strong> 850W 80+ Bronze ATX 3.0 Compatible con tarjeta gráfica PCIe Gen 5.0</p>
+                    <p><strong>Procesador:</strong> Intel Core I7-12700F 2.1Ghz 8+4 Cores 16 hilos</p>
+                    <p><strong>Disipador:</strong> Refrigeración líquida Tempest Liquid Cooler 240 RGB / Mars Gaming ML240 Dual ARGB KIT</p>
+                    <p> <strong>Placa base:</strong> Chipset Z790 con Wifi 6 y Bluetooth  - Marca y modelo según disponibilidad</p>
+                    <p> <strong>Disco Duro:</strong> Kingston NV2 1TB SSD PCIe 4.0 NVMe Gen 4x4 </p>
+                    <p> <strong>Memoria RAM:</strong> 32GB RAM DDR4 3200 2X16 CL16</p>
+                    <p><strong>Tarjeta gráfica</strong>Nvidia GeForce RTX 4070 Ti 12GB GDDR6 DLSS3 </p>
+                    <p> <strong>Sistema Operativo:</strong> Windows 10 PRO</p>
+                  </div>
+                  <hr>
+              </div>
+            </div>
+            </div>
+          </section>
+
+        <section id="fotos">
+                    <div class="titulo">NUESTROS PRODUCTOS<div>
+            <div class="grid-4">
+                <div class="col-4">
+                    <div class="container2">
+                        <img class="image" src="./img/placa-base.png" alt="">
+                        <div class="overlay">PLACAS BASE</div>
+                    </div> 
+                </div>
+                <div class="col-4">
+                    <div class="container2">
+                        <img class="image" src="./img/torre-de-la-cpu.png" alt="">
+                        <div class="overlay">Procesadores</div>
+                    </div>
+                </div>
+                    <div class="col-4">
+                      <div class="container2">
+                        <img class="image" src="./img/dispositivo-de-disco-duro.png" alt="">
+                        <div class="overlay">Discos duros</div>
+                      </div>
+                    </div>
+                <div class="col-4">
+                    <div class="container2">
+                        <img  class="image" src="./img/tarjeta-grafica.png" alt="">
+                        <div class="overlay">Tarjetas gráficas</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container2">
+                        <img class="image" src="./img/memoria-ram.png" alt="">
+                        <div class="overlay">Memorias RAM</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                  <div class="container2">
+                        <img class="image" src="./img/liquida.png" alt="">
+                        <div class="overlay">Refrigeraciones liquidas</div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="container2">
+                        <img class="image" src="./img/tarjeta-de-sonido.png" alt="">
+                        <div class="overlay">Tarjetas de sonido</div>
+                  </div>
+                </div>
+                <div  class="col-4">
+                  <div class="container2">
+                        <img class="image" src="./img/caja-pc.png" alt="">
+                        <div class="overlay">Cajas/Torres</div>
+                  </div>
+                </div>
+                <div  class="col-4">
+                  <div class="container2">
+                        <img class="image" src="./img/ventilador.png" alt="">
+                        <div class="overlay">Ventiladores Suplementarios</div>
+                  </div>
+                </div>
+                <div  class="col-4">
+                  <div class="container2">
+                        <img class="image" src="./img/fuente-de-alimentacion.png" alt="">
+                        <div class="overlay">Fuentes de alimentación</div>
+                  </div>
+                </div>
+                <div  class="col-4">
+                  <div class="container2">
+                        <img class="image" src="./img/disipador-de-calor.png" alt="">
+                        <div class="overlay">Disipadores CPU</div>
+                  </div>
+                </div>
+                <div  class="col-4">
+                  <div class="container2">
+                        <img class="image" src="./img/ssd.png" alt="">
+                        <div class="overlay">ssd</div>
+                  </div>
+                </div>
+
+            <div>
+                
+        </section>
+
+
+
+        <section id="gallery">
+            <div class="titulo">
+                GALLERY
+            </div>
+                <div class="grid-4">
+                    <div class="col-4">
+                            <img src="./img/CAJA-BRONZE.jpg" alt="">
+                            <h3>PC BRONZE</h3>
+                    </div>
+                    <div class="col-4">
+                            <img src="./img/CAJA-SILVER.jpg" alt="">
+                            <h3>PC SILVER</h3>
+                    </div>
+                    <div class="col-4">
+                            <img src="./img/CAJA-GOLD.jpg" alt="">
+                            <h3>PC GOLD</h3>
+                    </div>
+                    <div class="col-4">
+                            <img src="./img/caja-master.jpg" alt="">
+                            <h3>PC MASTER RAZE</h3>
+                    </div>
+                </div>
+
+
+
+        </section>
+
+
+        </section>
+
+        <footer class="footer">
+          <div class="container">
+              <div class="footer-row">
+                  <div class="footer-links">
+                      <h4>NAV</h4>
+                      <ul>
+                          <li><a href="#hero">Home</a></li>
+                          <li><a href="#intro">About us</a></li>
+                          <li><a href="#Servicios">Our services</a></li>
+                          <li><a href="#PCs">Pc</a></li>
+                          <li><a href="#fotos">Productos</a></li>
+                          <li><a href="#gallery">Gallery</a></li>
+                      </ul>                        
+                  </div>
+
+                  <div class="footer-links">
+                      <h4>AUTOR</h4>
+                      <ul>
+                          <li>Miguel Ángel Postigo</li>
+                      </ul>                       
+                  </div>
+                  <div class="footer-links">
+                      <h4>REDES</h4>
+                      <div class="social-link">
+                          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                      </div>                      
+                  </div>
+              </div>
+          </div>
+        </footer>
+
+    </div>
+</body>
+</html>

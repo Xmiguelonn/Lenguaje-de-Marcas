@@ -15,9 +15,9 @@
 
 body {
   background-image: url(../recursos/abou_me/fondo.jpg);
-  background-size: fill; /* Hace que la imagen cubra todo el espacio disponible */
-  background-repeat: repeat; /* Evita que la imagen se repita */
-  background-position: center; /* Centra la imagen */
+  background-size: fill;
+  background-repeat: repeat;
+  background-position: center; 
   display: block;
   justify-content: center;
   font-family: texto;
@@ -29,13 +29,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(5px); /*filtro para que se vea borroso*/
+  backdrop-filter: blur(5px); 
 }
 
 #topnav a {
   font-family: titulo;
   display: block;
-  float: left; /* Make elements float left */
+  float: left;
   color: white;
   text-align: center;
   padding: 14px 16px;

@@ -1,0 +1,85 @@
+/**********************************************/
+
+
+
+/**********************************************/
+
+@font-face {
+    font-family: titulos;
+    src: url(./fonts/Rukishy\ Triall.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(./fonts/October\ Night.ttf);
+}
+
+* {box-sizing: border-box;}  /* el width incluye el padding 
+                                el espacio en blanco lo coge
+                                de dentro del cuadro 
+                                lo haré SIEMPRE */
+
+body {background-color:rgb(152, 130, 172);
+    background-image: url(./img/crepes_fondo.jpg);
+        background-size: 50%;}
+
+#wrapper {background-color: #FFFDD0;
+          width:80%;             /* el width va en %  */
+          margin:auto;
+          padding:10%;
+          border-radius:20px;
+        
+}              
+
+h1 {
+    background-color: #7d4c2f;
+    color:#FAE7B5;
+    text-align:center;
+    padding:10px 0;
+    /* sombra de caja */
+    box-shadow: -15px -15px 15px gray;
+    font-family: titulos;
+}
+
+blockquote {border-left:4px solid #ec5353;
+            border-top:3px solid #ec5353;
+            font-style: italic;  /* poner en cursiva */
+            font-weight: bold;   /* poner en negrita */
+            background-color: #f9e4b7;
+            padding:10px;        /* margin y padding pequeños pueden estar en pixeles */
+        }
+#foto {width: 50%;  /* a todo el ancho de donde estás colocada, en este caso, el wrapper */
+        display:block;  /*  para que se comporte como un bloque */
+    } 
+
+dt {font-weight:bold;
+    color:#ec5353;
+    font-size:1.4em;
+    font-family: texto;}
+
+h2 {font-weight:bold;
+    background-color: #7d4c2f;
+    color:#FAE7B5;
+    padding:5px 5px;
+    width: 60%;
+    font-family:titulos;}
+
+dl{padding-left: 20px;
+    margin-right: 10%;
+    font-size: small;
+    font-family: texto;}
+
+li{font-weight: bold;
+    font-family: texto;}
+
+p {margin-top: 10%;
+    font-size: smaller;}
+
+dd{font-size: medium;}
+
+/*********************************** gestion de responsividad *********************************/
+
+@media only screen and (width<750px){
+    #wrapper {width:100%};
+    
+}

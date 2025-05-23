@@ -10,9 +10,9 @@
 
 body {
   background-image: url(../recursos/background.jpg);
-  background-size: cover; /* Hace que la imagen cubra todo el espacio disponible */
+  background-size: cover;
   background-repeat: round;
-  background-position: center; /* Centra la imagen */
+  background-position: center;
   display: block;
   justify-content: center;
   font-family: texto;
@@ -24,13 +24,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(5px); /*filtro para que se vea borroso*/
+  backdrop-filter: blur(5px);
 }
 
 #topnav a {
   font-family: titulo;
   display: block;
-  float: left; /* Make elements float left */
+  float: left;
   color: white;
   text-align: center;
   padding: 14px 16px;
