@@ -4,14 +4,27 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    display: flex;
+    flex-direction: column; 
 }
 
-#hola {
+
+h1 {
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 2em; 
+    text-align: center;
+}
+
+
+#general {
     background-color: rgb(237, 247, 234);
     border-radius: 40px;
     margin-top: 25px;
+    margin-bottom: 25px;
     padding: 50px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(188, 183, 183, 0.1);
 }
 
 #topnav {
@@ -24,14 +37,13 @@ body {
 
 #topnav a {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
     text-decoration: none;
+    color: white;
     margin: 8px 10px;
     padding: 14px 20px;
     font-size: 17px;
     border-radius: 10px;
     background-color: rgb(79, 124, 223);
-    transition: background-color 0.3s ease;
 }
 
 #topnav a:hover {
@@ -40,4 +52,87 @@ body {
 
 #topnav a.active {
     background-color: rgb(98, 196, 163);
+}
+
+
+/*CLIMA ACTUAL*/
+#temp_resume {
+    background-color: #f0f0f0; 
+    border-radius: 15px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    box-shadow: 2px 2px 8px rgb(172, 170, 170);
+}
+
+#temp_resume .col-3 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#temp_resume .col-3 p {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px; 
+    font-size: 0.95em;
+}
+
+#temp_resume .col-3 span {
+    font-size: 1.3em; 
+    color: #007bff;
+    font-weight: bold;
+}
+
+#weather_img {
+    height: 75px;
+    margin-bottom: 5px;
+}
+
+/*CLIMA 5 DIAS*/
+#clima_container {
+    background-color: #f0f0f0; 
+    padding: 15px;
+    box-shadow: 2px 2px 8px rgb(172, 170, 170);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px; 
+}
+
+#clima_template .card {
+    border-radius: 10px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    height: 100%;
+    width: 140px;
+    text-align: center;
+}
+
+
+.clima-img {
+    height: 60px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.card-body {
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(220, 227, 243);
+    min-height: 270px;
+}
+
+.date {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 0.95em;
+}
+
+.temp {
+    font-weight: bold;
+    color: #dc3545;
 }

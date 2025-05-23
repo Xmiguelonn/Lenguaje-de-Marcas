@@ -30,7 +30,7 @@ function fillContent5(clima){
         // Fill content
         climaElement.querySelector(".clima-img").src = icon;
         climaElement.querySelector(".date").textContent = "Day: " + date;
-        climaElement.querySelector(".temp").textContent = "Min: " + min_temp + ", Max: " + max_temp;
+        climaElement.querySelector(".temp").textContent = "Min: " + min_temp + " ºC" + ", Max: " + max_temp + " ºC";
         climaElement.querySelector(".wind").textContent = "Wind speed: " + max_wind + " kph";
         climaElement.querySelector(".precip").textContent = "Rain change: " + precip + " %";
 

@@ -4,34 +4,27 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-#hola {
-    background-color: rgb(237, 247, 234);
-    border-radius: 40px;
-    margin-top: 25px;
-    padding: 50px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-}
 
 #topnav {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     background-color: rgb(109, 153, 211);
     border-radius: 15px;
 }
 
 #topnav a {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
     text-decoration: none;
+    color: white;
     margin: 8px 10px;
     padding: 14px 20px;
     font-size: 17px;
     border-radius: 10px;
     background-color: rgb(79, 124, 223);
-    transition: background-color 0.3s ease;
 }
 
 #topnav a:hover {
@@ -40,4 +33,18 @@ body {
 
 #topnav a.active {
     background-color: rgb(98, 196, 163);
+}
+
+.card-title {
+    font-size: 25px; 
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }

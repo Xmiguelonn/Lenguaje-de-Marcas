@@ -19,7 +19,25 @@ function fillContent(clima){
 
     var hours = clima.forecast.forecastday[0].hour;
     
+    var temp00 = document.getElementById("temp_00");
+    var temp08 = document.getElementById("temp_08");
+    var temp12 = document.getElementById("temp_12");
+    var temp18 = document.getElementById("temp_18");
+
+
+
     hours.forEach(function(item) {
+
+        var timeStr = item.time.split(" ")[1];
+        if (timeStr === "00:00" && temp00) {
+            temp00.textContent = item.temp_c + " ºC";
+        } else if (timeStr === "08:00" && temp08) {
+            temp08.textContent = item.temp_c + " ºC";
+        } else if (timeStr === "12:00" && temp12) {
+            temp12.textContent = item.temp_c + " ºC";
+        } else if (timeStr === "18:00" && temp18) {
+            temp18.textContent = item.temp_c + " ºC";
+        }
 
     })
 }

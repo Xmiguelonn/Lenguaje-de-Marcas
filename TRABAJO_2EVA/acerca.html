@@ -1,32 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca</title>
-    <link rel="stylesheet" href="./css/acerca.css">
-    <link rel="icon" href="./media/icono.ico" type="image/x-icon">
+    <title>Acerca de</title>
+    <link rel="stylesheet" href="./css/acerca.css"> <link rel="icon" href="./media/icono.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
-
 <body>
 
-    <h1>Este es el acerca</h1>
-    <div id="topnav">
+    <nav id="topnav">
         <a href="./index.html">Inicio</a>
         <a href="./noticia.html">Noticias</a>
         <a href="./clima.html">Clima</a>
         <a class="active" href="./acerca.html">Acerca</a>
         <a href="./contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Acerca del Proyecto</h1>
+
+        <div class="content-box p-4 rounded shadow-sm">
+            <h2 class="mb-3">Descripción General del Proyecto</h2>
+            <p>Este proyecto es una aplicación web sencilla desarrollada como parte del curso de 1º DAW en el módulo de "Lenguaje de marcas". Su objetivo principal es practicar el uso de información dinámica a través de archivos JSON y llamadas a APIs</p>
+
+            <h2 class="mt-4 mb-3">Objetivos del Desarrollo</h2>
+            <ul>
+                <li>Aprender y aplicar los fundamentos del desarrollo web Front-end (HTML, CSS, JavaScript).</li>
+                <li>Familiarizarse con el uso de librerías como Bootstrap para un diseño responsivo.</li>
+                <li>Uso de datos externos con llamadas a APIs públicas</li>
+                <li>Crear una interfaz de usuario intuitiva y fácil de usar.</li>
+            </ul>
+
+            <h2 class="mt-4 mb-3">APIs Utilizadas</h2>
+            <p>Por falta de tiempo no se han podido usar APIs por lo que hemos tenido que trabajar con ficherso JSON estáticos</p>
+
+            <h2 class="mt-4 mb-3">Tecnologías Empleadas</h2>
+            <ul>
+                <li><b>HTML</b>: Para la estructura y contenido de la página web.</li>
+                <li><b>CSS</b>: Para el diseño y la presentación visual de la aplicación.</li>
+                <li><b>JavaScript</b>: Para la interactividad con el usuario y ayuda con el desarrollo y el uso de la información externa.</li>
+                <li><b>Bootstrap</b> 5: Para facilitar el diseño responsivo y el estilo de los elementos.</li>
+                <li><b>JSON</b>Guardar información externa.</li>
+            </ul>
+
+            <h2 class="mt-4 mb-3">Autor del Proyecto</h2>
+            <p><strong>Miguel Ángel Postigo Bernal</strong></p>
+            <p>Estudiante de 1º de Desarrollo de Aplicaciones Web 2024-2025.</p>
+        </div>
     </div>
 
-
+    <footer class="bg-dark text-white text-center p-3 mt-auto">
+        <p> Miguel Ángel Postigo Bernal 1ºDAW</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

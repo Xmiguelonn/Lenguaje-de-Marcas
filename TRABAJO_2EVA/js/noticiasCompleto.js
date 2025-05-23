@@ -83,6 +83,7 @@ articles.forEach(function(item) {
     newsElement.querySelector(".news-desc").textContent = item.description;
     newsElement.querySelector(".news-img").src = item.image;
     newsElement.querySelector(".news-link").href = item.url;
+    newsElement.querySelector(".news-source").textContent = item.source.name;
 
     newsContainer.appendChild(newsElement);
 
